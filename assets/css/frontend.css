@@ -1,0 +1,53 @@
+/* Main Code Block Container (`<pre>`) Styling */
+pre.prism-highlighter-container {
+    display: block;
+    margin: 1.5em 0;
+    padding: 1em;
+    overflow: auto;
+    max-height: 480px;
+    font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+    font-size: 13px;
+    line-height: 1.5;
+    direction: ltr;
+    text-align: left;
+    white-space: pre;
+    word-spacing: normal;
+    word-break: normal;
+    tab-size: 4;
+    -moz-tab-size: 4;
+    hyphens: none;
+    background: #f5f5f5;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    color: #333;
+}
+
+/* `<code>` Element Reset within the container */
+pre.prism-highlighter-container code {
+    font-family: inherit;
+    font-size: inherit;
+    direction: ltr;
+    text-align: left;
+    white-space: pre;
+    word-spacing: normal;
+    word-break: normal;
+    background: none;
+    color: inherit;
+    padding: 0;
+    border: 0;
+    box-shadow: none;
+}
+
+/* These provide distinct styling for code blocks explicitly marked as 'adddarkplain'. */
+pre.prism-highlighter-adddarkplain {
+    background: #131313 !important;
+    color: #cacaca !important;
+    border-color: #333;
+}
+
+/* These provide distinct styling for code blocks explicitly marked as 'addlightplain'. */
+pre.prism-highlighter-addlightplain {
+    background: #f9f9f9 !important;
+    color: #4a4a4a !important;
+    border-color: #ddd;
+}

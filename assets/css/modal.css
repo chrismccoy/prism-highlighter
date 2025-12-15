@@ -1,0 +1,169 @@
+/**
+ * Modal Dialog CSS
+ */
+
+/* Modal Overlay */
+.prism-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 100100;
+}
+
+/* Main Modal Wrapper */
+.prism-editor-wrap {
+    display: none;
+    background-color: #fff;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
+    width: 600px;
+    max-width: 90%;
+    height: 500px;
+    max-height: 90%;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 100105;
+    border-radius: 3px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Modal Header */
+.prism-editor-title {
+    background: #fcfcfc;
+    border-bottom: 1px solid #dfdfdf;
+    height: 40px;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 40px;
+    padding: 0 16px;
+    color: #23282d;
+    position: relative;
+}
+
+/* Modal Close Button */
+.prism-editor-closebtn {
+    color: #666;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Dashicon styling for the close button. */
+.prism-editor-closebtn:before {
+    font: normal 20px/1 dashicons;
+    content: "\f158";
+}
+
+/* Hover effect for the close button. */
+.prism-editor-closebtn:hover {
+    color: #d63638;
+}
+
+/* Modal Body Content */
+.prism-editor-body {
+    padding: 15px;
+    overflow-y: auto;
+    flex: 1;
+}
+
+/* Container for inline form options (language, highlight lines). */
+.prism-inline-options {
+    margin-bottom: 15px;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/* Minimum width for select elements in inline options. */
+.prism-inline-options select {
+    min-width: 150px;
+}
+
+/* Code input textarea styling. */
+.prism-editor-code {
+    width: 100%;
+    min-height: 250px;
+    font-family: Consolas, Monaco, monospace;
+    font-size: 13px;
+    line-height: 1.5;
+    white-space: pre;
+    padding: 10px;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+    resize: vertical;
+}
+
+/* Toggle button for advanced options. */
+#prism-toggle-options {
+    margin-top: 15px;
+    cursor: pointer;
+    font-weight: 600;
+    color: #0073aa;
+    display: inline-flex;
+    align-items: center;
+}
+
+/* Spacing for the Dashicon within the toggle button. */
+#prism-toggle-options span.dashicons {
+    margin-right: 5px;
+}
+
+/* Container for advanced options (hidden by default). */
+#prism-options-container {
+    display: none;
+    margin-top: 10px;
+    background: #f9f9f9;
+    border: 1px solid #eee;
+    padding: 10px;
+}
+
+/* Table styling within the advanced options. */
+#prism-options-container table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#prism-options-container td {
+    padding: 5px 0;
+    vertical-align: middle;
+}
+
+/* Text input styling within advanced options. */
+#prism-options-container input[type="text"] {
+    width: 100%;
+    max-width: 200px;
+}
+
+/* Modal Footer */
+.prism-editor-submitbox {
+    padding: 10px 16px;
+    background: #fcfcfc;
+    border-top: 1px solid #dfdfdf;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Responsive Adjustments */
+@media screen and (max-height: 600px) {
+    .prism-editor-wrap {
+        height: 90%;
+        top: 5%;
+        transform: translate(-50%, 0);
+    }
+}

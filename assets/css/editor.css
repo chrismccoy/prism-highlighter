@@ -1,0 +1,32 @@
+/* This ensures code blocks have a consistent look inside the visual editor. */
+pre {
+    font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+    font-size: 13px;
+    background: #F4F4F4 !important;
+    border: 1px solid #CCC !important;
+    margin-bottom: 1.5em !important;
+    padding: 10px !important;
+    min-height: 1.5em;
+    overflow: auto;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    border-radius: 2px;
+}
+
+/* When a user clicks on or selects a `<pre>` block, this styling provides visual feedback. */
+pre.prism-highlighter-focused {
+    background: #cce4f5 !important;
+    border: 1px solid #9dc8e6 !important;
+    box-shadow: 0 0 2px rgba(0,0,0,0.1);
+}
+
+/* Provides specific backgrounds/colors for code blocks explicitly marked as "plain". */
+pre.prism-highlighter-adddarkplain {
+    background: #131313 !important;
+    color: #CACACA;
+}
+
+pre.prism-highlighter-addlightplain {
+    background: #f9f9f9 !important;
+    color: #4a4a4a;
+}
